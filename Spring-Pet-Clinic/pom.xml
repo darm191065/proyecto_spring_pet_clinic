@@ -6,7 +6,7 @@
 	<groupId>com.aedefecium_solutio-topo</groupId>
 	<artifactId>Spring-Pet-Clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>Spring-Pet-Clinic</name>
 	<description>Demo project for Spring Boot</description>
@@ -24,15 +24,8 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+	<dependencies>		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -74,4 +67,8 @@
 	</build>
 
 
+	<modules>
+		<module>pet-clinic-data</module>
+		<module></module>
+</modules>
 </project>
